@@ -99,7 +99,7 @@ public class VehicleControl : MonoBehaviour
             return 0;
         }
 
-        int randomCount = Random.Range(0, nextSegments.Count - 1);
+        int randomCount = Random.Range(0, nextSegments.Count); //nextSegment.Count - 1 에서 수정
         return nextSegments[randomCount].ID;
     }
     //앱이 실행되었을때 현재 차량이 어느 구간에 어느 웨이포인트를 향해 가야하는지 스스로 판단.
